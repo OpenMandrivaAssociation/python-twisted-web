@@ -3,7 +3,7 @@
 Summary:        An HTTP protocol implementation together with clients and servers
 Name:           python-twisted-web
 Version: %version
-Release: %mkrel 1
+Release: %mkrel 2
 %define directory_down %(echo %version|perl -n -e  '/^(\d+\.\d+).*$/; print \$1 ')
 Source0:        http://tmrc.mit.edu/mirror/twisted/Web/%directory_down/TwistedWeb-%{version}.tar.bz2
 License:        MIT
