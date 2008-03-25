@@ -3,7 +3,7 @@
 Summary:        An HTTP protocol implementation together with clients and servers
 Name:           python-twisted-web
 Version: %version
-Release: %mkrel 2
+Release: %mkrel 3
 %define directory_down %(echo %version|perl -n -e  '/^(\d+\.\d+).*$/; print \$1 ')
 Source0:        http://tmrc.mit.edu/mirror/twisted/Web/%directory_down/TwistedWeb-%{version}.tar.bz2
 License:        MIT
@@ -36,7 +36,7 @@ the twisted python framework.
 %files
 %defattr(0755,root,root,0755)
 %defattr(0644,root,root,0755)
-%doc LICENSE README doc/*
+%doc LICENSE README 
 %if %mdkversion >= 200710
 %py_platsitedir/Twisted*egg-info
 %endif
