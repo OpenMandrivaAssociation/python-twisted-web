@@ -1,11 +1,11 @@
-%define version 0.7.0
+%define version 8.1.0
+%define rel 1
 
 Summary:        An HTTP protocol implementation together with clients and servers
 Name:           python-twisted-web
 Version: %version
-Release: %mkrel 3
-%define directory_down %(echo %version|perl -n -e  '/^(\d+\.\d+).*$/; print \$1 ')
-Source0:        http://tmrc.mit.edu/mirror/twisted/Web/%directory_down/TwistedWeb-%{version}.tar.bz2
+Release: %mkrel %rel
+Source0:        http://tmrc.mit.edu/mirror/twisted/Web/8.1/TwistedWeb-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/web/
