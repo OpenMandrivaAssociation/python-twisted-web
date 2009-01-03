@@ -1,5 +1,5 @@
-%define version 8.1.0
-%define rel 2
+%define version 8.2.0
+%define rel 1
 
 Summary:        An HTTP protocol implementation together with clients and servers
 Name:           python-twisted-web
@@ -16,7 +16,7 @@ Requires:       python-twisted-core
 #BuildArch:      noarch
 
 %description
-An HTTP protocol implementation together with clients and servers, based on 
+An HTTP protocol implementation together with clients and servers, based on
 the twisted python framework.
 
 %prep
@@ -32,11 +32,11 @@ the twisted python framework.
 
 %clean
 %__rm -rf %buildroot
- 
+
 %files
 %defattr(0755,root,root,0755)
 %defattr(0644,root,root,0755)
-%doc LICENSE README 
+%doc LICENSE README
 %if %mdkversion >= 200710
 %py_platsitedir/Twisted*egg-info
 %endif
