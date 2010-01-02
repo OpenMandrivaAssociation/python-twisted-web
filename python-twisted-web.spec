@@ -1,11 +1,12 @@
-%define version 8.2.0
+%define version 9.0.0
 %define rel 1
+%define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        An HTTP protocol implementation together with clients and servers
 Name:           python-twisted-web
 Version: %version
 Release: %mkrel %rel
-Source0:        http://tmrc.mit.edu/mirror/twisted/Web/8.1/TwistedWeb-%{version}.tar.bz2
+Source0:        http://tmrc.mit.edu/mirror/twisted/Web/%{mainver}/TwistedWeb-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/web/
