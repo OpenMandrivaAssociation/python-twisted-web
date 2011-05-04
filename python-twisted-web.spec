@@ -1,6 +1,6 @@
 %define name python-twisted-web
 %define version 10.1.0
-%define rel 3
+%define rel 4
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        An HTTP protocol implementation together with clients and servers
