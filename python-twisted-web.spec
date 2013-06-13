@@ -7,9 +7,9 @@
 
 Summary:        An HTTP protocol implementation together with clients and servers
 Name:           python-twisted-web
-Version:	12.2.0
+Version:	13.0.0
 Release:	1
-Source0:        http://tmrc.mit.edu/mirror/twisted/Web/%{mainver}/TwistedWeb-%{version}.tar.bz2
+Source0:        http://twistedmatrix.com/Releases/Web/13.0/TwistedWeb-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/web/
