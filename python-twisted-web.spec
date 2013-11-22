@@ -5,23 +5,24 @@
 # should be located in the same place
 %define debug_package %{nil}
 
-Summary:        An HTTP protocol implementation together with clients and servers
-Name:           python-twisted-web
+Summary:	An HTTP protocol implementation together with clients and servers
+Name:		python-twisted-web
 Version:	13.0.0
 Release:	1
-Source0:        http://twistedmatrix.com/Releases/Web/13.0/TwistedWeb-%{version}.tar.bz2
-License:        MIT
-Group:          Development/Python
-URL:            http://twistedmatrix.com/projects/web/
-BuildRequires:	python-devel python-twisted-core
-Requires:       python-twisted-core
+License:	MIT
+Group:		Development/Python
+Url:		http://twistedmatrix.com/projects/web/
+Source0:	http://twistedmatrix.com/Releases/Web/13.0/TwistedWeb-%{version}.tar.bz2
+BuildRequires:	python-twisted-core
+BuildRequires:	pkgconfig(python)
+Requires:	python-twisted-core
 
 %description
 An HTTP protocol implementation together with clients and servers, based on
 the twisted python framework.
 
 %prep
-%setup -q -n TwistedWeb-%{version}
+%setup -qn TwistedWeb-%{version}
 
 %build
 %__python setup.py build
@@ -31,10 +32,10 @@ the twisted python framework.
 
 
 %files
-%defattr(0755,root,root,0755)
 %defattr(0644,root,root,0755)
 %doc LICENSE README
-%dir %py_platsitedir/twisted/web
-%py_platsitedir/twisted/web/*
-%py_platsitedir/twisted/plugins/*
-%py_platsitedir/*.egg-info
+%dir %{py_platsitedir}/twisted/web
+%{py_platsitedir}/twisted/web/*
+%{py_platsitedir}/twisted/plugins/*
+%{py_platsitedir}/*.egg-info
+
