@@ -6,13 +6,14 @@
 %define debug_package %{nil}
 
 Summary:	An HTTP protocol implementation together with clients and servers
+
 Name:		python-twisted-web
-Version:	13.1.0
+Version:	13.2.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/projects/web/
-Source0:	http://twistedmatrix.com/Releases/Web/13.1/TwistedWeb-%{version}.tar.bz2
+Source0:	http://twistedmatrix.com/Releases/Web/13.2/TwistedWeb-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
 Requires:	python-twisted-core
@@ -38,5 +39,6 @@ the twisted python framework.
 %{py_platsitedir}/twisted/web/*
 %{py_platsitedir}/twisted/plugins/*
 %{py_platsitedir}/*.egg-info
+
 
 
