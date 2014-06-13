@@ -9,7 +9,7 @@ Summary:	An HTTP protocol implementation together with clients and servers
 
 Name:		python-twisted-web
 Version:	13.2.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/projects/web/
