@@ -12,7 +12,7 @@ Version:	13.2.0
 Release:	2
 License:	MIT
 Group:		Development/Python
-Url:		http://twistedmatrix.com/projects/web/
+Url:		https://twistedmatrix.com/projects/web/
 Source0:	http://twistedmatrix.com/Releases/Web/13.2/TwistedWeb-%{version}.tar.bz2
 BuildRequires:	python-twisted-core
 BuildRequires:	pkgconfig(python)
